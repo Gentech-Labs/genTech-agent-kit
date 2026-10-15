@@ -2,19 +2,18 @@
 
 **One install. Full stack. Your agent, running.**
 
-[![Release](https://img.shields.io/github/v/release/ProtoJay4789/genTech-agent-kit?style=flat&label=release)](https://github.com/ProtoJay4789/genTech-agent-kit/releases)
-[![License](https://img.shields.io/github/license/ProtoJay4789/genTech-agent-kit?style=flat)](LICENSE)
-[![Language](https://img.shields.io/github/languages/top/ProtoJay4789/genTech-agent-kit?style=flat)](https://github.com/ProtoJay4789/genTech-agent-kit/tree/main)
-[![Skills](https://img.shields.io/badge/skills-npx%20install-blue?style=flat)](https://github.com/ProtoJay4789/genTech-agent-kit/tree/main/skills)
+[![Release](https://img.shields.io/github/v/release/Gentech-Labs/genTech-agent-kit?style=flat&label=release)](https://github.com/Gentech-Labs/genTech-agent-kit/releases)
+[![License](https://img.shields.io/github/license/Gentech-Labs/genTech-agent-kit?style=flat)](LICENSE)
+[![Language](https://img.shields.io/github/languages/top/Gentech-Labs/genTech-agent-kit?style=flat)](https://github.com/Gentech-Labs/genTech-agent-kit/tree/main)
+[![Skills](https://img.shields.io/badge/skills-npx%20install-blue?style=flat)](https://github.com/Gentech-Labs/genTech-agent-kit/tree/main/skills)
 [![x402](https://img.shields.io/badge/payments-x402-8A2BE2?style=flat)](https://www.x402.org)
 [![Q402](https://img.shields.io/badge/gasless-Q402-00D4AA?style=flat)](https://q402.quackai.ai)
 [![Self-Evolution](https://img.shields.io/badge/evolve-harness-FF6B9D?style=flat)](https://github.com/erenciracioglu-dotcom/hermes-self-evolution)
-[![Glama](https://img.shields.io/badge/glama-genTech--shop-blueviolet?style=flat)](https://glama.ai/mcp/servers/ProtoJay4789/genTech-shop)
 
 The GenTech Agent Kit packages the entire GenTech stack into a single installable MCP server. One command gives any AI agent real-time market data, DeFi intelligence, payment rails, agent identity infrastructure, and self-evolution capabilities.
 
 ```bash
-uvx --from git+https://github.com/ProtoJay4789/genTech-agent-kit.git gentech-kit
+uvx --from git+https://github.com/Gentech-Labs/genTech-agent-kit.git gentech-kit
 ```
 
 **Requires:** Hermes Agent v0.19.0+ | CMC_API_KEY env var (free at coinmarketcap.com/api)
@@ -25,7 +24,7 @@ uvx --from git+https://github.com/ProtoJay4789/genTech-agent-kit.git gentech-kit
 
 ```bash
 # Install and run
-uvx --from git+https://github.com/ProtoJay4789/genTech-agent-kit.git gentech-kit
+uvx --from git+https://github.com/Gentech-Labs/genTech-agent-kit.git gentech-kit
 
 # Set your API key
 export CMC_API_KEY="your-key-here"
@@ -39,14 +38,15 @@ The MCP server starts and exposes all GenTech tools to your agent.
 
 ```bash
 # Main skill
-npx skills add ProtoJay4789/genTech-agent-kit
+npx skills add Gentech-Labs/genTech-agent-kit
 
 # Specific skills
-npx skills add ProtoJay4789/genTech-agent-kit --skill x402-payments
-npx skills add ProtoJay4789/genTech-agent-kit --skill robinhood-chain
-npx skills add ProtoJay4789/genTech-agent-kit --skill output-enforcer
-npx skills add ProtoJay4789/genTech-agent-kit --skill context-cycle-proactive
-npx skills add ProtoJay4789/genTech-agent-kit --skill handoff-mesh
+npx skills add Gentech-Labs/genTech-agent-kit --skill x402-payments
+npx skills add Gentech-Labs/genTech-agent-kit --skill robinhood-chain
+npx skills add Gentech-Labs/genTech-agent-kit --skill output-enforcer
+npx skills add Gentech-Labs/genTech-agent-kit --skill context-cycle-proactive
+npx skills add Gentech-Labs/genTech-agent-kit --skill handoff-mesh
+npx skills add Gentech-Labs/genTech-agent-kit --skill desktop-mesh
 ```
 
 ---
@@ -84,6 +84,8 @@ Witness log auto-fed from context-weight nightly. No bookkeeping theatre (Articl
 | **context-cycle-proactive** | Save → route → load → resume at 80-90% context; keeps every agent synced to the second brain |
 | **safe-update-restart** | Safe update/restart for a production VPS: backup → controlled window → restart → verify every service & endpoint after |
 | **handoff-mesh** | Built-in communication layer for multi-agent setups: full-mesh handoff folders, 15-min watcher (open handoffs + recent completions + tappable Obsidian deep-links), weekly archive cleanup, and a completion-reporting loop so every handoff is handled AND verified. Includes a second-brain setup preset to wire a new agent's brain in one go |
+| **fed-council** | Fleet identity + synthesis layer: your agents deliberate as a governing council (Chair, Steward, Governors — names stay, personality layers on), the overnight maintenance force runs as the **Council Overnight Session**, and a nightly synthesis loop turns stored-but-forgotten notes into **Council Minutes** — clusters, completions, and retirements — so ideas finish other ideas instead of dying in the vault. Includes the Elder Statesman Chair voice spec (ElevenLabs, radio post-chain) and member onboarding steps |
+| **desktop-mesh** | Connect an always-on server to a desktop/laptop Hermes over a private network (Tailscale) so agents on **different machines** become real peers — DM each other and **wake each other when a handoff lands**. Covers the loopback bind that silently blocks it (`127.0.0.1` works same-host, fails cross-machine), fail-soft push-on-handoff, the bidirectional wiring most setups get half-right, and the security rules that keep an agent API off the public internet |
 
 ### Modules
 
@@ -103,6 +105,28 @@ Witness log auto-fed from context-weight nightly. No bookkeeping theatre (Articl
 | Agent Skills | ✅ | ✅ | ✅ | ✅ |
 | Self-Evolution | ✅ | Cron only | Cron only | Cron only |
 | x402 Payments | ✅ | ✅ | ✅ | ✅ |
+
+---
+
+## Discover the Gateway
+
+The GenTech Labs x402 Gateway is listed on **PayAPI Market** (verified, free discovery — buyers still pay your wallet directly). Agents can find the route from the warehouse as well as from this repo:
+
+- **Search:** https://payapi.market/mcp
+- **Listing:** https://payapi.market/api/gentech-labs-x402-gateway
+
+Paste into **Claude Desktop** or **Cursor**:
+
+```json
+{
+  "mcpServers": {
+    "payapi": {
+      "url": "https://payapi.market/mcp"
+    }
+  }
+}
+```
+
 
 ---
 
@@ -130,9 +154,6 @@ GITHUB_TOKEN=your-github-token
 |-------|---------|
 | Pay Wallet (Solana) | pX1FTLyXAskfD4y8pRwx7Go58GpM9t2PtGZGj6Lq2hR |
 | TREASURY Token | 0x56D03C0f4167cC2c26B781dE47E608d660F13ba3 |
-| Primary Wallet | 0x7ebff188f2Eba16518C02864589b1403a5d1296a |
-| GenTech Shop | glama.ai/mcp/servers/ProtoJay4789/genTech-shop |
-| Investor Deck | gentechlabs.net/grant.html |
 
 ---
 
