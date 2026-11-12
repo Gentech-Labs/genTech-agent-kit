@@ -163,8 +163,11 @@ GITHUB_TOKEN=your-github-token
 
 | Asset | Address |
 |-------|---------|
-| Pay Wallet (Solana) | pX1FTLyXAskfD4y8pRwx7Go58GpM9t2PtGZGj6Lq2hR |
+| **Your pay wallet** | **none ships** — this kit contains no default address and no code that reads one |
 | TREASURY Token | 0x56D03C0f4167cC2c26B781dE47E608d660F13ba3 |
+
+> **No payout address ships with this kit.** A wallet written into a repo becomes a default, and a payment
+> skill that runs without configuration sends funds to whoever wrote the file. Configure your own x402 client.
 
 ---
 
