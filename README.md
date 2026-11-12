@@ -153,7 +153,7 @@ GITHUB_TOKEN=your-github-token
 
 | Asset | Address |
 |-------|---------|
-| **Your pay wallet** | **set `GENTECH_PAY_TO` — deliberately not shipped in this file** |
+| **Your pay wallet** | **none ships** — this kit contains no default address and no code that reads one |
 | TREASURY Token | 0x56D03C0f4167cC2c26B781dE47E608d660F13ba3 |
 
 > **No payout address ships with this kit.** A wallet written into a repo becomes a default, and a payment
